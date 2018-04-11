@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rancho');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background:url(bg.jpeg)center center no-repeat;
+            background-size: cover;
+        }
+        .gradient-box{
+            height: 450px;
+            width: 30%;
+            background: rgba(0%, 0%, 0%, 0.5);
+            padding-top: 0.5%;
+            margin-top: 9%;
+        }
+        .grad{
+            background: -webkit-linear-gradient(120deg,rgba(255, 86, 34, 0.481), rgba(41, 120, 255, 0.495));
+        }
+        
+        .gradRev{
+            background: -webkit-linear-gradient(180deg,#64FFDA,#FFEB3B );
+        }
+        .btn{
+            margin-top: 2%;
+            height: 60px;
+            width: 250px;
+            font-size: 2em;
+            border-radius: 100px;
+            border: none;
+            color: #fafafa;
+            /* box-shadow: 3px 2px 18px #555; */
+            outline: none;
+        }
+        .rancho{
+            font-family: 'Rancho', cursive;
+        }
+        .btn-hvr{
+            transition: 0.8s ease-in-out;
+        }
+        .btn-hvr:hover{
+            width: 355px;
+            /* -webkit-background-clip: text; */
+            /* color: transparent; */
+            /* border: 4px solid #222; */
+        }
+        .clip{
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .inp{
+            margin-top: 2%;
+            height: 50px;
+            width: 300px;
+            border-radius:25px;
+            border: none;
+            outline: none;
+            padding-left: 57px;
+            font-size: 1.5em;
+            color: #fafafa;
+        }
+        .gradInp{
+            background: -webkit-linear-gradient(180deg,rgba(139, 139, 139, 0.548),rgba(255, 35, 90, 0.5) );
+        }
+    .icon{
+        background: rgba(100, 255, 219, 0);
+        font-size: 20px;
+        position: absolute;
+        margin-top: 24px;
+        margin-left: 1.6%;
+        color: #fafafa;
+    }
+    .ftr{
+        background: rgba(0%, 0%, 0%, 0.5);
+        height: 24px;
+        width: 100%;
+        bottom: 0px;
+        position: fixed;
+        color: #fafafa;
+        padding-top: 0.2%;
+        font-size: 1.1em;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="gradient-box">
+            <center>
+                <h1 class="gradRev clip rancho" style="font-size: 4.2em; margin-top: 50px;margin-bottom: 30px;">Login</h1>
+                <span><i class="fas fa-user icon"></i><input type="text" class="inp grad rancho" placeholder="Username"></span><br>
+                <span><i class="fas fa-lock icon"></i><input type="password" class="inp grad rancho" placeholder="Password"></span><br>
+        <!-- <button class="btn grad rancho">
+                Login
+            </button>-->
+            <br>
+        <button class="btn gradRev rancho btn-hvr">
+                Login
+            </button> 
+            </center>
+        </div>
+    </center>
+
+    <div class="ftr rancho">
+        <center>
+            Designed by: dev.atul
+        </center>
+    </div>
+</body>
+</html>
